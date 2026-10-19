@@ -31,7 +31,19 @@ Gold is too light for text on white, so it is only used for buttons, highlights 
 2. Update the dots: each `<span class="dot dot--filled">` is $10,000. Change plain `<span class="dot">` lines to `dot dot--filled` as the total grows. Also update the `3 filled` number in the `aria-label` beside them.
 3. On `index.html`, update the "Our path" line.
 
-**Photos.** Replace a file in `assets/img/` with one of the same name, or change the `src` in the HTML. Keep photos under about 300 KB and around 1200 px wide.
+**Photos.** To swap a photo, upload a new file with the same name into `assets/img/`. Crop it to the same shape, keep it under about 300 KB, and remove location data first.
+
+| File | Where it appears | Shape |
+|---|---|---|
+| `hero.jpg` | Home: big arch at the top | Tall portrait |
+| `hero-closeup.jpg` | Home: small circle on the top photo | Square |
+| `moment-1.jpg` to `moment-4.jpg` | Home: row of four arches under "We dream of a world…" | 3:4 portrait |
+| `our-work.jpg` | Home: "Our work" | 4:5 portrait |
+| `band.jpg` | Home: behind the purple "Play the dhol" band, tinted purple | Wide |
+| `practice-1.jpg` to `practice-3.jpg` | Home: "Play with us" collage. Practice photos only | 1 tall, 2 near-square |
+| `share-1.jpg` to `share-3.jpg` | Share page: the three arches | 3:4 portrait |
+| `share-where.jpg` | Share page: "Where your $1 goes" | 4:5 portrait |
+| `og-image.jpg` | Preview picture when the link is shared | 1200 × 630 |
 
 **Voices section.** It is built but hidden until you have real quotes. In `index.html`:
 
