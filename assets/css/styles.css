@@ -1,0 +1,65 @@
+/* Guru Garjana Academy
+   Purple = our play and skills. Gold = serving the cause. */
+:root {
+  --play: #662D91;
+  --serve: #FFBF00;
+  --ink: #221C26;
+  --muted: #5E5566;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFFFF; }
+img { max-width: 100%; }
+a { color: #662D91; }
+a:hover { color: #221C26; }
+[hidden] { display: none !important; }
+
+/* photo frames and bands */
+.ph {
+  position: relative;
+  overflow: hidden;
+  background: #ECE6F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+/* goal tracker: 100 dots, each $10,000 */
+.dot {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #DCCDA6;
+}
+.dot--filled { background: var(--serve); border-color: #B38600; }
+.dots--sm .dot { width: 12px; height: 12px; }
+
+/* share page: "tell 2 / 3 / 5" buttons */
+.pill {
+  min-height: 46px;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #221C26;
+  background: transparent;
+  border: 1.5px solid #B7AEBE;
+}
+.pill[aria-pressed="true"] { background: var(--serve); border-color: var(--serve); }
+
+/* share page: growing circles */
+.chain-step { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.chain-dot { border-radius: 50%; box-sizing: border-box; background: #FFE7A3; border: 2px solid #E0B84A; }
+.chain-dot.is-last { background: var(--serve); border-color: #B38600; }
+.chain-label { font-size: 14px; color: #5E5566; }
+.chain-total { font-weight: 700; font-size: 18px; }
+
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--play);
+  outline-offset: 3px;
+}
