@@ -24,7 +24,8 @@ blog.html           Blog list
 blog/               One file per blog post
 vercel.json         Clean URLs (/1dollar) and redirects from the old site's pages
 assets/css/         styles.css (brand colours live at the top)
-assets/js/          give.js (share-page calculator and "Copy message" button)
+assets/js/          give.js (share-page calculator, "Copy message"), book.js (booking form)
+api/book.js         Sends booking requests by email through Resend (Vercel function)
 assets/img/         photos, logos, favicons, social preview image
 ```
 
@@ -84,7 +85,16 @@ Every page repeats the same header, toran and footer. If you change a menu link,
 
 **Learn to play.** Lesson videos are on YouTube, and each row links to one. The WhatsApp group link appears three times: search for `chat.whatsapp.com` to change it. Each lesson section ends with its assessment rubric, in a box that opens on tap. Dhol Taal 9 and Zanj Taal 8 have no video yet.
 
-**Book us.** Prices: Rhythm from $300, Celebration from $500, Grand Garjana from $1,000, and flexible pricing for causes. Each "Request" button opens an email with the package name already filled in.
+**Book us.** Prices: Rhythm from $300, Celebration from $500, Grand Garjana from $1,000, and flexible pricing for causes. Each "Request" button jumps to the performance request form with that package already selected. You can also link straight to it, e.g. `/book-us?package=celebration#request`.
+
+**Booking emails (Resend).** The form sends to `api/book.js`, which emails the request to gurugarjana@gmail.com through [Resend](https://resend.com). Pressing "Reply" answers the person who asked. To switch it on:
+
+1. In Resend, create an API key.
+2. In Vercel, open the project → Settings → Environment Variables and add `RESEND_API_KEY` with that key (for Production and Preview). Redeploy.
+3. Optional: verify gurugarjana.org in Resend and add `BOOKING_FROM`, e.g. `Guru Garjana Website <bookings@gurugarjana.org>`. Without it, Resend's test sender is used, and that can only deliver to the email address you signed up to Resend with.
+4. Optional: `BOOKING_TO` sends requests to a different inbox.
+
+Until the key is set, the form shows a message asking people to email gurugarjana@gmail.com instead.
 
 **New blog post.** Copy `blog/one-beat-at-a-time.html` to `blog/<short-name>.html`, change the title, date, description and body, then add a card for it at the top of the list in `blog.html`.
 

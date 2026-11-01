@@ -19,6 +19,7 @@ Every push to `main` goes live. Every other branch and pull request gets its own
 - The header, toran and footer are repeated in every page except `1dollar.html`. A menu change means editing all of them (list in `README.md`).
 - `assets/css/styles.css`: brand colour variables, goal dots, share-page buttons and circles
 - `assets/js/give.js`: share-page calculator ("if each of us tells 2 / 3 / 5 friends") and the "Copy message" button
+- `assets/js/book.js` and `api/book.js`: the performance request form on `book-us.html`. The page script preselects the package (`?package=rhythm`) and sends the form. `api/book.js` is a Vercel serverless function that emails the request through Resend. It needs `RESEND_API_KEY` in Vercel; `BOOKING_TO` and `BOOKING_FROM` are optional (see the top of the file).
 - `assets/img/`: photos named by where they appear (table in `README.md`), plus logos and icons
 - `vercel.json`: clean URLs, and redirects from the old site's pages (`/donate` and `/give` go to `/1dollar`; `/join-us` goes to `/#join`)
 - Most styling is inline on elements, carried over from the original design. Follow the same pattern for new sections.
@@ -69,7 +70,7 @@ Every push to `main` goes live. Every other branch and pull request gets its own
   - Each park name links to Google Maps.
 - The share message links to `https://gurugarjana.org/1dollar`. The social preview tags use `https://gurugarjana.org`.
 - The caption under the top photo reads "That's us at BMM 2024!"
-- Booking packages (`book-us.html`): Rhythm from $300 (at least 2 dhols, 1 tasha), Celebration from $500 (more than 4 dhols, 1 tasha), Grand Garjana from $1,000 (7–8 players), flexible pricing for causes. Requests open an email to gurugarjana@gmail.com.
+- Booking packages (`book-us.html`): Rhythm from $300 (at least 2 dhols, 1 tasha), Celebration from $500 (more than 4 dhols, 1 tasha), Grand Garjana from $1,000 (7–8 players), flexible pricing for causes. Each package button opens the request form with that package selected. Form fields: package, name, email, phone, date, start time, duration (30 minutes / 1 hour / more than 1 hour), address, type (procession / stage performance), message.
 - New-player WhatsApp group: https://chat.whatsapp.com/F8IfWvE8BxxCILdNJh06y0. YouTube channel: https://www.youtube.com/@gurugarjana7228. Lessons are free.
 - "48 performances" also appears on `book-us.html`.
 
@@ -94,7 +95,7 @@ Every push to `main` goes live. Every other branch and pull request gets its own
 ## Open items
 
 - The Voices section in `index.html` is built but has the `hidden` attribute until real quotes arrive. It has `[Name]` and `[year]` placeholders, and its menu link was removed.
-- "Register as a player" and the booking buttons open an email to gurugarjana@gmail.com, because the old site's forms weren't moved over. Replace them with real forms when available.
+- "Register as a player" still opens an email to gurugarjana@gmail.com. The booking form sends through Resend, but only once `RESEND_API_KEY` is set in Vercel. Until then, people who submit it see a message asking them to email gurugarjana@gmail.com. To send from gurugarjana.org instead of Resend's test sender, verify the domain in Resend and set `BOOKING_FROM`.
 - The receipt form became "Ask for a receipt" on `our-work.html`: an email with the amount filled in. The old site's Login was not rebuilt (a static site can't host member logins).
 - Photo spots on the inner pages show `[PHOTO: …]` boxes until photos arrive (list in `README.md`). Photos and videos will be done in one round, after the design and content are finished.
 - The assessment rubrics on `bootstrapping.html` (dhol, tasha, zanj) come from the old site. The tasha rubric says "all 4 basic tasha taals", but only 3 tasha lessons exist.
