@@ -82,7 +82,7 @@ Every page repeats the same header, toran and footer. If you change a menu link,
 | `book-hero.jpg` | Book us: arch at the top | 4:5 portrait |
 | `book-band.jpg` | Book us: behind the purple "Your celebration" band, tinted purple | Wide |
 
-**Learn to play.** Lesson videos are on YouTube, and each row links to one. The WhatsApp group link appears three times: search for `chat.whatsapp.com` to change it. The three rubric lines still show `[RUBRIC LINK]`. Dhol Taal 9 and Zanj Taal 8 have no video yet.
+**Learn to play.** Lesson videos are on YouTube, and each row links to one. The WhatsApp group link appears three times: search for `chat.whatsapp.com` to change it. Each lesson section ends with its assessment rubric, in a box that opens on tap. Dhol Taal 9 and Zanj Taal 8 have no video yet.
 
 **Book us.** Prices: Rhythm from $300, Celebration from $500, Grand Garjana from $1,000, and flexible pricing for causes. Each "Request" button opens an email with the package name already filled in.
 

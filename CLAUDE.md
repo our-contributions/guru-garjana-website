@@ -61,6 +61,7 @@ Every push to `main` goes live. Every other branch and pull request gets its own
   - Zelle: gurugarjana@gmail.com
   - Employer matching through Benevity
 - Partners: Kranti, Akshaya Patra, Friends of Foster Children (Palm Beach), Darkness to Light. On the site they're described without place names.
+- Causes we serve (`our-work.html`): girls born into hardship, feeding hungry children, children in foster care, protecting children from abuse, and animals in need.
 - Saturday practice, 8:30–10:30 AM:
   - North: Okeeheelee Park
   - Central: Quiet Waters, Tradewinds or Spanish River Athletic Park
@@ -95,7 +96,8 @@ Every push to `main` goes live. Every other branch and pull request gets its own
 - The Voices section in `index.html` is built but has the `hidden` attribute until real quotes arrive. It has `[Name]` and `[year]` placeholders, and its menu link was removed.
 - "Register as a player" and the booking buttons open an email to gurugarjana@gmail.com, because the old site's forms weren't moved over. Replace them with real forms when available.
 - The receipt form became "Ask for a receipt" on `our-work.html`: an email with the amount filled in. The old site's Login was not rebuilt (a static site can't host member logins).
-- Photo spots on the inner pages show `[PHOTO: …]` boxes until photos arrive (list in `README.md`). `bootstrapping.html` shows `[RUBRIC LINK]` three times.
+- Photo spots on the inner pages show `[PHOTO: …]` boxes until photos arrive (list in `README.md`). Photos and videos will be done in one round, after the design and content are finished.
+- The assessment rubrics on `bootstrapping.html` (dhol, tasha, zanj) come from the old site. The tasha rubric says "all 4 basic tasha taals", but only 3 tasha lessons exist.
 - Not carried over from the old site: unlinked draft pages (learn, pathak, members, events, practices, youngsters, competitions, surveys, store) and the cookie banner.
 - If these older photo files still exist, they are unused and can be deleted: `hero-dhol.jpg`, `hands-stick-dhol.jpg`, `work-banner.jpg`, `night-event.jpg`.
 - The original design canvas on claude.ai is out of date. This repo is the source of truth.
