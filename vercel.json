@@ -4,8 +4,6 @@
   "redirects": [
     { "source": "/donate", "destination": "/1dollar", "permanent": false },
     { "source": "/give", "destination": "/1dollar", "permanent": false },
-    { "source": "/about-us", "destination": "/", "permanent": false },
-    { "source": "/our-work", "destination": "/", "permanent": false },
-    { "source": "/book-us", "destination": "/", "permanent": false }
+    { "source": "/join-us", "destination": "/#join", "permanent": false }
   ]
 }
