@@ -63,3 +63,61 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   outline: 3px solid var(--play);
   outline-offset: 3px;
 }
+
+/* book-us: performance request form */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 20px 20px;
+}
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.field--wide { grid-column: 1 / -1; }
+.field label, .field-label { font-size: 15px; font-weight: 600; color: #221C26; }
+.field input:not([type="radio"]), .field select, .field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 48px;
+  padding: 11px 14px;
+  font-family: inherit;
+  font-size: 17px;
+  color: #221C26;
+  background: #FFFFFF;
+  border: 1.5px solid #B7AEBE;
+  border-radius: 10px;
+}
+.field textarea { resize: vertical; line-height: 1.5; }
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible {
+  outline: 3px solid var(--play);
+  outline-offset: 1px;
+  border-color: var(--play);
+}
+.field [aria-invalid="true"] { border-color: #B3261E; }
+.choices { display: flex; flex-wrap: wrap; gap: 10px 24px; padding-top: 4px; }
+.field .choice { display: flex; align-items: center; gap: 8px; font-size: 17px; font-weight: 400; cursor: pointer; min-height: 32px; }
+.field .choice input { width: 20px; height: 20px; min-height: 0; margin: 0; accent-color: var(--play); }
+.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-error { margin: 18px 0 0; font-size: 16px; color: #B3261E; }
+.form-submit {
+  margin-top: 24px;
+  min-height: 52px;
+  padding: 14px 28px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--play);
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form-submit[disabled] { opacity: .65; cursor: progress; }
+.form-sent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #FFFFFF;
+  border: 1.5px solid #E3D9EA;
+  border-radius: 14px;
+  padding: 32px 28px;
+}
+.form-sent[hidden] { display: none; }
