@@ -49,19 +49,24 @@ Every push to `main` goes live. Every other branch and pull request gets its own
 ## Writing rules
 
 - English only. The audience is global: no country or city-specific references (no India, Mumbai, chai, Diwali). "Dhol-Tasha", "dhol" and "tasha" are fine.
-- Warm, plain and short, written as "we".
+- Warm, plain and short, written as "we" and "you". Every line should be concise and emotionally human.
+- Headlines 8 words or fewer. Paragraphs 2 sentences or fewer. One feeling per section.
+- The $1 ask is always spelled out: buttons say "Give $1"; the idea is "Give $1, then ask three friends to do the same". Never "pass it on" on its own, which reads as unclear.
+- Never claim what $1 buys. The approved line: "Your $1 joins gifts from people everywhere. Together they fund schooling, meals and safety for children who need it most."
+- Ways to help, in this order: Play with us, Book us, Donate, Give $1 and ask 3 friends. No separate "Give monthly" ask (Zeffy still offers monthly inside its form).
 - Don't name individual members on the site without Abhishek's go-ahead.
 
 ## Facts in use (update everywhere when they change)
 
 - Raised: **$30,000** as of Oct 2026. Goal **$1,000,000 by 2030**. Shown as 3 filled dots out of 100.
 - "Our path" milestones: 2026 $30K (we are here), 2027 $100K, 2028 $250K, 2029 $500K, 2030 $1M.
-- Drumming since 2022; 48 performances. Non-profit 501(c)(3); donations are tax-deductible.
+- Drumming since 2022; 69+ performances. Non-profit 501(c)(3); donations are tax-deductible.
 - Donations:
   - Zeffy form: https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-20014
   - Zelle: gurugarjana@gmail.com
   - Employer matching through Benevity
-- Partners: Kranti, Akshaya Patra, Friends of Foster Children (Palm Beach), Darkness to Light. On the site they're described without place names.
+- Partners: Kranti, Akshaya Patra, Friends of Foster Children (Palm Beach), Darkness to Light, Snehwan (snehwan.in: a home and schooling for children of struggling farming families). Plus "Animal rescue": any group caring for animals, pets or wild, with no named organisation. On the site they're described without place names.
+- Partner lists appear in three places, so update all three: `index.html` (Our work), `our-work.html` (Our beats, their impact), `1dollar.html` (Where your $1 goes).
 - Causes we serve (`our-work.html`): girls born into hardship, feeding hungry children, children in foster care, protecting children from abuse, and animals in need.
 - Saturday practice, 8:30–10:30 AM:
   - North: Okeeheelee Park
@@ -72,11 +77,11 @@ Every push to `main` goes live. Every other branch and pull request gets its own
 - The caption under the top photo reads "That's us at BMM 2024!"
 - Booking packages (`book-us.html`): Rhythm from $300 (at least 2 dhols, 1 tasha), Celebration from $500 (more than 4 dhols, 1 tasha), Grand Garjana from $1,000 (7–8 players), flexible pricing for causes. Each package button opens the request form with that package selected. Form fields: package, name, email, phone, date, start time, duration (30 minutes / 1 hour / more than 1 hour), address, type (procession / stage performance), message.
 - New-player WhatsApp group: https://chat.whatsapp.com/F8IfWvE8BxxCILdNJh06y0. YouTube channel: https://www.youtube.com/@gurugarjana7228. Lessons are free.
-- "48 performances" also appears on `book-us.html`.
+- "69+ performances" appears on `index.html` (numbers strip and the "Since 2022" line in Play with us) and on `book-us.html`.
 
 **Where the amount raised appears:**
 
-- `index.html`: "$30,000 raised for children"; "$30,000 raised · $970,000 to go"; the "Our path" line; the number of `dot dot--filled` spans; "3 filled" in the dots' `aria-label`.
+- `index.html`: "$30,000 raised for children"; "$30,000 raised · $970,000 to go"; the "Our path" line; "69+ performances and $30,000 raised" in Play with us; the number of `dot dot--filled` spans; "3 filled" in the dots' `aria-label`.
 - `1dollar.html`: "$30,000 of $1,000,000 raised"; the dots; their `aria-label`.
 
 ## Photos
