@@ -53,7 +53,7 @@ Every push to `main` goes live. Every other branch and pull request gets its own
 - Headlines 8 words or fewer. Paragraphs 2 sentences or fewer. One feeling per section.
 - The $1 ask is always spelled out: buttons say "Give $1"; the idea is "Give $1, then ask three friends to do the same". Never "pass it on" on its own, which reads as unclear.
 - Never claim what $1 buys. The approved line: "Your $1 joins gifts from people everywhere. Together they fund schooling, meals and safety for children who need it most."
-- Ways to help, in this order: Play with us, Book us, Donate, Give $1 and ask 3 friends. No separate "Give monthly" ask (Zeffy still offers monthly inside its form).
+- Home "Three ways to add your beat", in this order: Play with us, Book us, Give $1 and ask 3 friends. No separate Donate or "Give monthly" card there (the Donate link stays in the footer and on Our work).
 - Don't name individual members on the site without Abhishek's go-ahead.
 
 ## Facts in use (update everywhere when they change)
