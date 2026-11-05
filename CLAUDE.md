@@ -17,6 +17,7 @@ Every push to `main` goes live. Every other branch and pull request gets its own
 - `1dollar.html`: share page ("Give $1, tell 3 friends"), served at `/1dollar`
 - `about-us.html`, `our-work.html`, `book-us.html`, `bootstrapping.html` ("Learn to play"), `blog.html`, `blog/*.html`: inner pages rebuilt from the old site, at the old addresses
 - The header, toran and footer are repeated in every page except `1dollar.html`. A menu change means editing all of them (list in `README.md`).
+- The menu's "Play With Us" goes to `/bootstrapping` (Learn to play). The footer keeps "Play With Us" (`/#join`, Saturday practice) and "Learn to Play" as separate links. Home "Come play with us" has a "What you get" heading (Learn / Grow / Serve).
 - `assets/css/styles.css`: brand colour variables, goal dots, share-page buttons and circles
 - `assets/js/give.js`: share-page calculator ("if each of us tells 2 / 3 / 5 friends") and the "Copy message" button
 - `assets/js/book.js` and `api/book.js`: the performance request form on `book-us.html`. The page script preselects the package (`?package=rhythm`) and sends the form. `api/book.js` is a Vercel serverless function that emails the request through Resend. It needs `RESEND_API_KEY` in Vercel; `BOOKING_TO` and `BOOKING_FROM` are optional (see the top of the file).
